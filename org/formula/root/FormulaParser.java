@@ -16,14 +16,23 @@ public class FormulaParser {
      * @param args the command line arguments
      */
     
-    final String plus = "+";
-    final String minus = "-";
-    final String times = "*";
-    final String div = "/";
-    final String expo = "^";
-    final String mod = "%";
-    final String oper = "(";
-    final String cper = ")";
+    final static String add = "+";
+    final static String sub = "-";
+    final static String mul = "*";
+    final static String div = "/";
+    final static String exp = "^";
+    final static String mod = "%";
+    
+    final static String oper = "(";
+    final static String cper = ")";
+    
+    final static int op_add = 1;
+    final static int op_sub = 1;
+    final static int op_mul = 2;
+    final static int op_div = 2;
+    final static int op_exp = 3;
+    final static int op_mod = 2;
+    
     
     static String omniFormula;
     static int xVal;
