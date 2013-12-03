@@ -25,7 +25,8 @@ public class FormulaParser {
     final String oper = "(";
     final String cper = ")";
     
-    String omniFormula;
+    static String omniFormula;
+    static int xVal;
     
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
@@ -33,6 +34,12 @@ public class FormulaParser {
         System.out.println("Input a formula where independant variable is x and dependant variable is y");
         System.out.print("     ");
         
+        omniFormula = s.next();
         
+        System.out.println("Set x=");
+        
+        xVal = s.nextInt();
+        
+        System.out.println("formula="+omniFormula+"value="+xVal);
     }
 }
